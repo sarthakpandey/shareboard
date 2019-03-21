@@ -11,7 +11,7 @@ const FRONTEND_PATH = path.join(__dirname, "public");
 
 const io = socketio(httpServer);
 
-app.use(express.static(FRONTEND_PATH));
+app.get("/", express.static(FRONTEND_PATH));
 
 let result = [];
 
