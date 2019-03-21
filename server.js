@@ -36,6 +36,8 @@ io.on("connection", socket => {
   });
 });
 
-httpServer.listen(2222, () => {
+const PORT = 5000 || process.env.PORT;
+
+httpServer.listen(PORT, () => {
   console.log("Backend Server started");
 });
