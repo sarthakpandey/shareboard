@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sharing live</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #whiteboard {
+        border: double 16px black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      #colorpicker {
+        position: absolute;
+        margin: 20px;
+        width: 10%;
+        height: 3%;
+        z-index: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+
+      <input type="color" id="colorpicker" />
+
+      <canvas id="whiteboard" value = "	#000000"></canvas>
+   
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/myScript.js"></script>
+  </body>
+</html>
